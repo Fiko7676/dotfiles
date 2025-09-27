@@ -1,4 +1,6 @@
 {pkgs, ...}: {
+  nixpkgs.config.allowUnfree = true;
+
   programs.firefox.enable = true;
   programs.nix-ld.enable = true;
   programs.htop.enable = true;

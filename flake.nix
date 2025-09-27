@@ -28,11 +28,7 @@
     ...
   } @ inputs: let
     system = "x86_64-linux";
-
-    pkgs = import nixpkgs {
-      inherit system;
-      config.allowUnfree = true;
-    };
+    pkgs = nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
@@ -40,6 +36,7 @@
       modules = [
         ./hardware.nix
         ./modules/bootloader.nix
+        ./modules/gaming.nix
         ./modules/hardware.nix
         ./modules/locales.nix
         ./modules/network.nix
