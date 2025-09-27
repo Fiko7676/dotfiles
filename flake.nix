@@ -17,12 +17,6 @@
       url = "path:/home/finn/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # Zen browser
-    zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
@@ -31,7 +25,6 @@
     home-manager,
     nixos-hardware,
     nixvim-config,
-    zen-browser,
     ...
   } @ inputs: let
     system = "x86_64-linux";
