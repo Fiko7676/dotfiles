@@ -35,7 +35,6 @@
     ...
   } @ inputs: let
     system = "x86_64-linux";
-    username = "finn";
 
     pkgs = import nixpkgs {
       inherit system;
@@ -54,13 +53,14 @@
         ./modules/nix.nix
         ./modules/packages.nix
         ./modules/services.nix
+        ./modules/shell.nix
         ./modules/users.nix
 
         nixos-hardware.nixosModules.lenovo-thinkpad-t490s
       ];
     };
 
-    homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.finn = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
       extraSpecialArgs = {
         inherit inputs;
@@ -68,8 +68,8 @@
 
       modules = [
         {
-          home.username = username;
-          home.homeDirectory = "/home/${username}";
+          home.username = "finn";
+          home.homeDirectory = "/home/finn";
         }
         nixvim-config.homeModules.default
         # CORRECTED LINE: Changed 'homeModules' to 'homeManagerModules'

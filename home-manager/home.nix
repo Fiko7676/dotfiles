@@ -14,4 +14,6 @@
     ./programs/git.nix
     ./programs/kitty.nix
   ];
+
+  programs.home-manager.enable = true;
 }
