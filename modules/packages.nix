@@ -14,6 +14,8 @@
   environment.systemPackages = with pkgs; [
     gcc
     home-manager
+    obsidian
+    ripgrep
     vim
     wget
   ];

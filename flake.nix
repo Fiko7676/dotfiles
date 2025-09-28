@@ -38,6 +38,7 @@
         ./modules/bootloader.nix
         ./modules/gaming.nix
         ./modules/hardware.nix
+        ./modules/helper.nix
         ./modules/locales.nix
         ./modules/network.nix
         ./modules/nix.nix

@@ -7,11 +7,12 @@
     auto-optimise-store = true;
     warn-dirty = true;
   };
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 14d";
-  };
+  # nh is handling this
+  # nix.gc = {
+  #   automatic = true;
+  #   dates = "daily";
+  #   options = "--delete-older-than 14d";
+  # };
 
   system.autoUpgrade = {
     enable = true;

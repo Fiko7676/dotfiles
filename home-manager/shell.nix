@@ -7,9 +7,6 @@
     history.size = 10000;
 
     shellAliases = {
-      nrs = "sudo nixos-rebuild switch --flake ~/dotfiles/.#nixos";
-      hms = "home-manager switch --flake ~/dotfiles";
-
       v = "nvim";
       vim = "nvim";
     };

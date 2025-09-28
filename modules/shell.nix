@@ -1,6 +1,6 @@
 {
   environment.shellAliases = {
-    nrs = "sudo nixos-rebuild switch --flake /home/finn/dotfiles/.#nixos";
-    hms = "home-manager switch --flake /home/finn/dotfiles/.#finn";
+    nrs = "nh os switch /home/finn/dotfiles/ -H nixos";
+    hms = "nh home switch /home/finn/dotfiles/";
   };
 }
