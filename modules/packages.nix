@@ -12,10 +12,14 @@
   };
 
   environment.systemPackages = with pkgs; [
+    cargo
     gcc
     home-manager
+    nodejs
     obsidian
     ripgrep
+    rustc
+    uv
     vim
     wget
   ];
