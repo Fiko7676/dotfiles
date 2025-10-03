@@ -3,7 +3,6 @@
     enable = true;
     settings = {
       selectedAuthType = "oauth-personal";
-      vimMode = true;
       preferredEditor = "nvim";
       mcpServers = {
         nixos = {
