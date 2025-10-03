@@ -27,10 +27,11 @@
     gamescopeSession.enable = true;
   };
 
-  environment.systemPackages = [
-    pkgs.heroic-unwrapped
-    pkgs.intel-media-driver
-    pkgs.wine
-    pkgs.zlib
+  environment.systemPackages = with pkgs; [
+    heroic
+    intel-media-driver
+    prismlauncher
+    wine
+    zlib
   ];
 }
