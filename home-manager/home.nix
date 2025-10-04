@@ -12,7 +12,7 @@
     ./shell.nix
 
     ./programs/browser.nix
-    ./programs/gemini.nix
+    ./programs/opencode.nix
     ./programs/git.nix
     ./programs/kitty.nix
     ./programs/vesktop.nix
