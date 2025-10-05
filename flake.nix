@@ -46,6 +46,7 @@
         ./modules/services.nix
         ./modules/shell.nix
         ./modules/users.nix
+        ./modules/virtualisation.nix
 
         nixos-hardware.nixosModules.lenovo-thinkpad-t490s
       ];
