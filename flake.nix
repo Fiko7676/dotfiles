@@ -64,7 +64,6 @@
           home.homeDirectory = "/home/finn";
         }
         nixvim-config.homeModules.default
-        # CORRECTED LINE: Changed 'homeModules' to 'homeManagerModules'
         ./home-manager/home.nix
       ];
     };
