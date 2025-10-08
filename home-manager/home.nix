@@ -16,6 +16,7 @@
     ./programs/git.nix
     ./programs/kitty.nix
     ./programs/vesktop.nix
+    ../hyprland/home.nix
   ];
 
   programs.home-manager.enable = true;

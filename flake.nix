@@ -35,6 +35,9 @@
 
       modules = [
         ./hardware.nix
+
+        ./hyprland/default.nix
+
         ./modules/bootloader.nix
         ./modules/gaming.nix
         ./modules/hardware.nix
