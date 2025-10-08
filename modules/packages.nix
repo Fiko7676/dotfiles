@@ -5,7 +5,6 @@
   programs.nix-ld.enable = true;
   programs.htop.enable = true;
   programs.mtr.enable = true;
-  programs.git.enable = true;
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
@@ -13,14 +12,20 @@
 
   environment.systemPackages = with pkgs; [
     cargo
+    curl
+    fzf
     gcc
+    gh
     home-manager
+    jq
     nodejs
     obsidian
     ripgrep
     rustc
+    unzip
     uv
     vim
     wget
+    zip
   ];
 }
