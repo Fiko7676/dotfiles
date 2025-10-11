@@ -7,6 +7,7 @@
     ./core/lsp.nix
     ./core/options.nix
 
+    ./lang/python.nix
     ./lang/markdown.nix
     ./lang/nix.nix
 
