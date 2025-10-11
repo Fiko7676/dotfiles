@@ -15,6 +15,7 @@
     ./programs/gemini.nix
     ./programs/git.nix
     ./programs/kitty.nix
+    ./programs/tmux.nix
     ./programs/vesktop.nix
     ../hyprland/home.nix
   ];
