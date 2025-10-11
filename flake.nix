@@ -13,8 +13,8 @@
       url = "github:NixOS/nixos-hardware/master";
     };
 
-    nixvim-config = {
-      url = "path:/home/finn/nixvim";
+    nixvim = {
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -24,7 +24,7 @@
     nixpkgs,
     home-manager,
     nixos-hardware,
-    nixvim-config,
+    nixvim,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -66,7 +66,7 @@
           home.username = "finn";
           home.homeDirectory = "/home/finn";
         }
-        nixvim-config.homeModules.default
+        nixvim.homeModules.nixvim
         ./home-manager/home.nix
       ];
     };

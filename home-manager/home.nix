@@ -21,4 +21,6 @@
   ];
 
   programs.home-manager.enable = true;
+
+  programs.nixvim = import ../nixvim/default.nix;
 }
