@@ -9,11 +9,19 @@
     };
   };
 
-  programs.nix-ld.enable = true;
+  virtualisation.libvirtd.enable = true;
 
-  users.users.finn.extraGroups = ["docker"];
+  programs.virt-manager.enable = true;
+
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+
+  users.users.finn.extraGroups = ["docker" "kvm" "libvirtd"];
 
   environment.systemPackages = with pkgs; [
+    distrobox
     docker-compose
   ];
 }
