@@ -6,6 +6,8 @@
     ];
     auto-optimise-store = true;
     warn-dirty = true;
+
+    trusted-users = ["root" "finn"];
   };
   # nh is handling this
   # nix.gc = {

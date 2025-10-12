@@ -13,6 +13,7 @@
   environment.systemPackages = with pkgs; [
     cargo
     curl
+    devenv
     fzf
     gcc
     gh
