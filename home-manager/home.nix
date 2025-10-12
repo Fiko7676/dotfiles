@@ -8,8 +8,6 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ./shell.nix
-
     ./programs/browser.nix
     ./programs/gemini.nix
     ./programs/gnome.nix
@@ -17,6 +15,8 @@
     ./programs/kitty.nix
     ./programs/tmux.nix
     ./programs/vesktop.nix
+    ./programs/zsh.nix
+
     ../hyprland/home.nix
   ];
 
