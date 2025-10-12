@@ -12,6 +12,7 @@
 
     ./programs/browser.nix
     ./programs/gemini.nix
+    ./programs/gnome.nix
     ./programs/git.nix
     ./programs/kitty.nix
     ./programs/tmux.nix
