@@ -36,7 +36,7 @@
       modules = [
         ./hardware.nix
 
-        ./hyprland/default.nix
+        ./modules/hyprland/default.nix
 
         ./modules/bootloader.nix
         ./modules/gaming.nix
@@ -67,7 +67,7 @@
           home.homeDirectory = "/home/finn";
         }
         nixvim.homeModules.nixvim
-        ./home-manager/home.nix
+        ./modules/home/home.nix
       ];
     };
   };
