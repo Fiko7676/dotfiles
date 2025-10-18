@@ -1,6 +1,9 @@
 {
   # ayu
-  colorschemes.ayu.enable = true;
+  colorschemes.tokyonight = {
+    enable = true;
+    settings.style = "night";
+  };
 
   # bufferline
   plugins.bufferline = {
