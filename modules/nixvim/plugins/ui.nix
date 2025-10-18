@@ -1,4 +1,8 @@
 {
+  # ayu
+  colorschemes.ayu.enable = true;
+
+  # bufferline
   plugins.bufferline = {
     enable = true;
     settings = {
@@ -51,6 +55,92 @@
       };
     };
   };
+
+  # lualine.nix
+  plugins.lualine = {
+    enable = true;
+    settings = {
+      options = {
+        icons_enabled = true;
+        theme = "auto";
+        component_separators = {
+          left = "";
+          right = "";
+        };
+        section_separators = {
+          left = "";
+          right = "";
+        };
+        disabled_filetypes = {
+          statusline = [];
+          winbar = [];
+        };
+        ignore_focus = [];
+        always_last_session = true;
+        globalstatus = true;
+        refresh = {
+          statusline = 1000;
+          tabline = 1000;
+          winbar = 1000;
+        };
+      };
+      sections = {
+        lualine_a = ["mode"];
+        lualine_b = ["filename"];
+        lualine_c = ["branch"];
+        lualine_x = ["diagnostics" "diff" "encoding" "fileformat" "filetype"];
+        lualine_y = ["progress"];
+        lualine_z = ["location"];
+      };
+      inactive_sections = {
+        lualine_a = [];
+        lualine_b = [];
+        lualine_c = ["filename"];
+        lualine_x = ["location"];
+        lualine_y = [];
+        lualine_z = [];
+      };
+      tabline = {};
+      extensions = [];
+    };
+  };
+
+  # mini-icons
+  plugins.mini = {
+    enable = true;
+    modules.icons.enable = true;
+    mockDevIcons = true;
+  };
+
+  # noice
+  plugins.noice = {
+    enable = true;
+    settings = {
+      cmdline.enabled = true;
+      presets = {
+        command_palette = true;
+        long_message_to_split = true;
+        lsp_doc_border = true;
+      };
+    };
+  };
+
+  # which-key
+  plugins.which-key = {
+    enable = true;
+    settings.preset = "modern";
+  };
+
+  plugins.treesitter = {
+    enable = true;
+    settings = {
+      auto_install = true;
+      highlight.enable = true;
+      indent.enable = true;
+    };
+  };
+
+  # bufferline
   keymaps = [
     {
       action = "<cmd>BufferLineCycleNext<CR>";
