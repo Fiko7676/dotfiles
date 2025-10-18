@@ -1,41 +1,25 @@
-{
+{pkgs, ...}: {
   plugins = {
     # autopairs
     nvim-autopairs.enable = true;
 
-    # cmp
-    cmp = {
+    # blink.cmp
+    blink-cmp = {
       enable = true;
-      autoEnableSources = true;
       settings = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "buffer";}
-          {name = "cmp_nvim_lsp_signature_help";}
-          {name = "emoji";}
-          {name = "treesitter";}
-          {name = "calc";}
-          {name = "rg";}
-        ];
-        mapping = {
-          "<C-Space>" = "cmp.mapping.complete()";
-          "<CR>" = "cmp.mapping.confirm({ select = true; })";
-          "<C-y>" = "cmp.mapping.confirm({ select = true; })";
-          "<C-n>" = "cmp.mapping.select_next_item()";
-          "<C-p>" = "cmp.mapping.select_prev_item()";
-        };
+        signature.enabled = true;
       };
     };
-    lspkind.enable = true;
-    cmp-nvim-lsp-signature-help.enable = true;
-    cmp-emoji.enable = true;
-    cmp-treesitter.enable = true;
-    cmp-calc.enable = true;
-    cmp-rg.enable = true;
 
     # flash
     flash.enable = true;
+
+    # luasnip
+    luasnip = {
+      enable = true;
+      fromVscode = [{paths = [pkgs.vimPlugins.friendly-snippets];}];
+    };
+    friendly-snippets.enable = true;
 
     # none-ls
     none-ls.enable = true;
