@@ -7,9 +7,11 @@
     ./core/lsp.nix
     ./core/options.nix
 
-    ./lang/python.nix
     ./lang/markdown.nix
     ./lang/nix.nix
+    ./lang/python.nix
+    ./lang/rust.nix
+    ./lang/typescript.nix
 
     ./plugins/ai.nix
     ./plugins/editing.nix
