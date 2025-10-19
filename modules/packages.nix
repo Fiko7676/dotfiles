@@ -11,6 +11,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    bun
     cargo
     curl
     devenv
@@ -21,6 +22,7 @@
     jq
     nodejs
     obsidian
+    python3
     ripgrep
     rustc
     unzip
