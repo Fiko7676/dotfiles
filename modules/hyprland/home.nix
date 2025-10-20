@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
@@ -180,6 +180,17 @@
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
+    };
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      pkgs.xdg-desktop-portal-gtk
+    ];
+    config = {
+      common.default = [ "hyprland" "gtk" ];
     };
   };
 }
