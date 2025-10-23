@@ -11,6 +11,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    bottles
     bun
     cargo
     curl
