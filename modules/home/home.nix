@@ -8,7 +8,6 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ./programs/browser.nix
     ./programs/gemini.nix
     ./programs/gnome.nix
     ./programs/git.nix
