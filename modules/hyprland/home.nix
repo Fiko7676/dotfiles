@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./programs/hypridle.nix
+    ./programs/hyprshot.nix
     ./programs/lockscreen.nix
     ./programs/rofi.nix
     ./config/appearance.nix
