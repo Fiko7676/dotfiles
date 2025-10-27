@@ -11,6 +11,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    blueman
     bottles
     bun
     cargo
