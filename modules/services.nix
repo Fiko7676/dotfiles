@@ -23,4 +23,7 @@
 
   # OpenSSH
   services.openssh.enable = true;
+
+  # Timezone
+  services.automatic-timezoned.enable = true;
 }
