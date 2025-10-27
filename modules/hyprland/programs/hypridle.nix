@@ -1,6 +1,4 @@
 {
-  programs.hyprlock.enable = true;
-
   services.hypridle = {
     enable = true;
     settings = {
@@ -11,12 +9,12 @@
 
       listener = [
         {
-          timeout = 300;
+          timeout = 180;
           on-timeout = "hyprlock";
         }
 
         {
-          timeout = 420;
+          timeout = 400;
           on-timeout = "hyprctl dispatch dpms off";
           on-resume = "hyprctl dispatch dpms on";
         }

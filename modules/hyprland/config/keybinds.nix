@@ -9,6 +9,7 @@
       "$mainMod, E, exec, $fileManager"
       "$mainMod, V, togglefloating,"
       "ALT, SPACE, exec, $menu"
+      "$mainMod SHIFT, L, exec, wlogout"
       "$mainMod, P, pseudo,"
       "$mainMod, F, togglesplit,"
       "$mainMod, H, movefocus, l"
