@@ -4,6 +4,7 @@
     ./programs/hyprshot.nix
     ./programs/lockscreen.nix
     ./programs/rofi.nix
+    ./programs/swww.nix
     ./config/appearance.nix
     ./config/keybinds.nix
     ./config/env.nix

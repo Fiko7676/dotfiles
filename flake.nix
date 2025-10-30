@@ -17,6 +17,11 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    wallpaper = {
+      url = "github:JaKooLit/Wallpaper-bank";
+      flake = false;
+    };
   };
 
   outputs = {

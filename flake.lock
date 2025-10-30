@@ -170,7 +170,8 @@
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "wallpaper": "wallpaper"
       }
     },
     "systems": {
@@ -200,6 +201,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "wallpaper": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760900809,
+        "narHash": "sha256-Z1HvGAjMkhyAI2HI/XhceGkbJCwlS+9835rTXgAVQ3k=",
+        "owner": "JaKooLit",
+        "repo": "Wallpaper-bank",
+        "rev": "9ebd4d3226ff904453e49aaf98ca9f6b9a83a2cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JaKooLit",
+        "repo": "Wallpaper-bank",
         "type": "github"
       }
     }
